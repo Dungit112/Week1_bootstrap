@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        body {
+            padding: 30px;
+        }
+        .my-container {
+            border: 1px solid green;
+        }
+
+        .my-row {
+            border: 1px solid red;
+            height: 300px;
+        }
+        .my-col {
+            border: 1px solid blue;
+        }
+
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Vuejs</a>
+                <a class="dropdown-item" href="#">JS</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">PHP</a>
+              </div>
+           
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <!-- end nav  -->
+      <div class="modal" id="demoModal">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h2 class="modal-title">Confirm</h2>
+                      <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                      <p>this is modal body!</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal" >Confirm</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class=" alert alert-danger alert-dismissable fade show "role="alert">i'm alert
+                         <button type="button" class="close" data-dismiss="alert" ><span aria-hidden="true" >&times;</span></button>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#demoModal" >  Show modal</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <form action="" class="main-form" class="needs-validation" novalidate >
+            <div class="row">
+                <div class="col">
+                     <div class="form-group">
+                <label for="firstName">FirstName</label>
+            <input type="text" class="form-control is-invalid "  name="firstName"></input>
+            <div class="valid-feedback">Looks good!</div>
+            </div>
+                </div>
+                <div class="col">
+                     <div class="form-group">
+                <label for="lastName">LastName</label>
+            <input type="text" class="form-control" name="lastName"></input>
+            <small class="form-text text-muted">this should be your last name</small>
+            </div>
+                </div>
+            </div>
+           
+            <div class="form-group">
+                <label for="userName">UserName</label>
+            <input type="text" class="form-control is-valid form1" name="userName" required></input>
+            <div class="invalid-feedback">please enter a valid name</div>
+            </div>
+            <div class="form-group">
+                <label for="passWord">Password</label>
+            <input type="password" class="form-control" name="passWord"></input>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+            <select name="gender" id="gender" class="form-control">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            </div>
+            
+            <div class="form-check">
+                <input type="checkbox"id="accept-terms" class="form-check-input" >
+            <label for="accept-terms" class="form-check-label" >AC & C</label>
+            </div>
+            <button type="submit" class="btn btn-primary"  >Submit</button>
+          
+        </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+            var form = document.querySelector('.needs-validation');
+            form.addEventListener('submit', function(event){
+                if(form.checkValidity()===false){
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            })
+
+        </script>
+
+</body>
+</html>

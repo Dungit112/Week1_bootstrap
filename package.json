@@ -1,0 +1,16 @@
+{
+  "name": "asdasd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "npm": "^6.14.11",
+    "sass": "^1.32.5"
+  }
+}
